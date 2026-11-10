@@ -109,7 +109,7 @@
     picks.forEach(function (b) { b.classList.toggle('on', b === btn); });
     pickImg.classList.add('swap');
     setTimeout(function () {
-      pickImg.src = 'img/' + btn.getAttribute('data-img') + '.webp';
+      pickImg.src = 'img/' + btn.getAttribute('data-img') + '.webp?v=2';
       pickImg.alt = btn.getAttribute('data-alt');
       pickImg.classList.remove('swap');
     }, 280);
