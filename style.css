@@ -69,7 +69,7 @@ p { max-width: 62ch; }
 .hero { height: 100svh; position: relative; }
 .hero-stage { position: relative; height: 100svh; overflow: hidden; background: var(--bg); }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 55%; filter: brightness(.38) saturate(.85); }
-.hero-pizza { position: absolute; right: 3vw; top: 50%; width: min(54vw, 80svh); aspect-ratio: 1; margin-top: calc(min(54vw, 80svh) / -2 + 32px); transform: translate3d(0, calc(var(--p, 0) * 6vh), 0) scale(calc(1 + var(--p, 0) * 1.6)) rotate(calc(var(--p, 0) * 70deg)); will-change: transform; }
+.hero-pizza { position: absolute; right: 3vw; top: 50%; width: min(46vw, 68svh); aspect-ratio: 1; margin-top: calc(min(46vw, 68svh) / -2 + 32px); transform: translate3d(0, calc(var(--p, 0) * 6vh), 0) scale(calc(1 + var(--p, 0) * 1.6)) rotate(calc(var(--p, 0) * 70deg)); will-change: transform; }
 .hero-pizza img { width: 100%; height: 100%; animation: spin 140s linear infinite; filter: drop-shadow(0 30px 40px rgba(0,0,0,.55)); }
 @keyframes spin { to { transform: rotate(360deg); } }
 .hero-text { position: absolute; inset: 0; opacity: calc(1 - var(--p, 0) * 2.4); pointer-events: none; }
@@ -220,7 +220,7 @@ html.js .rv.in { opacity: 1; transform: none; }
   .bar { grid-template-columns: 1fr auto; height: 60px; }
   .links { display: none; }
   .hero-title { left: 20px; right: 20px; top: 84px; bottom: auto; font-size: 16vw; }
-  .hero-pizza { width: 70vw; right: 15vw; top: auto; bottom: 310px; margin-top: 0; }
+  .hero-pizza { width: 64vw; right: 18vw; top: auto; bottom: 310px; margin-top: 0; }
   .hero-side { left: 20px; right: 20px; top: auto; width: auto; bottom: 20px; }
   .hero-side p { font-size: var(--step-body); margin-bottom: 14px; max-width: 34ch; }
   .hero-side .btn { width: 100%; min-height: 54px; }
