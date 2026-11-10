@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizzeria da Giorgio · Caprile di Alleghe, Dolomiti</title>
+<meta name="description" content="Pizzeria ristorante da Giorgio a Caprile di Alleghe: pizze con i nomi delle cime, polenta, primi di montagna. Corso Veneto 64. Chiuso il martedì.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,400i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar" id="top">
+  <a class="wordmark" href="#top">Da Giorgio</a>
+  <nav class="links" aria-label="Principale">
+    <a href="#menu" data-i18n="nav_menu">Menù</a>
+    <a href="#locale" data-i18n="nav_place">Il locale</a>
+    <a href="#recensioni" data-i18n="nav_reviews">Recensioni</a>
+    <a href="#dove" data-i18n="nav_where">Dove siamo</a>
+  </nav>
+  <div class="bar-end">
+    <button class="lang" type="button" id="lang" aria-label="Cambia lingua / Change language">EN</button>
+    <a class="btn" href="tel:+390437721212" data-i18n="call">Chiama</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO: la pizza sulla brace -->
+<section class="hero" id="hero" aria-label="Pizzeria da Giorgio">
+  <div class="hero-stage">
+    <img class="hero-bg" src="img/facciata.jpg" alt="La facciata di Pizzeria da Giorgio a Caprile, con i balconi di legno e i gerani" width="1920" height="1273" fetchpriority="high">
+    <div class="hero-pizza" id="heroPizza">
+      <img src="img/p-golosa.webp" alt="Pizza Golosa con burrata, rucola e pomodori secchi" width="1000" height="1000" fetchpriority="high">
+    </div>
+    <div class="hero-text" id="heroText">
+      <h1 class="hero-title"><span data-i18n="h1a">Pizzeria</span><br><span data-i18n="h1b">da Giorgio</span></h1>
+      <div class="hero-side">
+        <p data-i18n="hero_p">Pizza, polenta e primi di montagna a Caprile di Alleghe, tra il Civetta e la Marmolada.</p>
+        <a class="btn" href="tel:+390437721212" data-i18n="hero_cta">Chiama per un tavolo</a>
+        <p class="open" id="openNow" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Caprile di Alleghe</span><i></i><span>Pizza</span><i></i><span>Polenta e funghi</span><i></i><span>Dal Civetta al Pelmo</span><i></i><span>Birra alla spina</span><i></i><span>Chiuso il martedì</span><i></i>
+    <span>Caprile di Alleghe</span><i></i><span>Pizza</span><i></i><span>Polenta e funghi</span><i></i><span>Dal Civetta al Pelmo</span><i></i><span>Birra alla spina</span><i></i><span>Chiuso il martedì</span><i></i>
+  </div>
+</div>
+
+<!-- LE PIZZE: scegli la tua cima -->
+<section class="picker section" id="pizze">
+  <div class="wrap">
+    <h2 class="h2" data-i18n="pick_h">Le pizze hanno il nome delle cime</h2>
+  </div>
+  <div class="wrap picker-grid">
+    <div class="pick-stage">
+      <div class="pick-disc"><img id="pickImg" src="img/p-dolomiti.webp" alt="Pizza Dolomiti con funghi e salsiccia" width="1000" height="1000" loading="lazy"></div>
+      <p class="pick-cap" id="pickCap">Immagine illustrativa</p>
+    </div>
+    <ul class="pick-list" aria-label="Scegli una pizza">
+      <li><button type="button" class="pk on" data-img="p-dolomiti" data-alt="Pizza Dolomiti con funghi e salsiccia"><span class="n">Dolomiti</span><span class="i">formaggio, funghi, salsiccia</span><span class="p">10</span></button></li>
+      <li><button type="button" class="pk" data-img="p-golosa" data-alt="Pizza Golosa con burrata, rucola e pomodori secchi"><span class="n">Golosa</span><span class="i">burrata, bufala, pomodori secchi, crudo, rucola</span><span class="p">13</span></button></li>
+      <li><button type="button" class="pk" data-img="p-burrata" data-alt="Pizza con prosciutto crudo e burrata"><span class="n">Crudo e burrata</span><span class="i">burrata, prosciutto crudo, mozzarella</span><span class="p">11,5</span></button></li>
+      <li><button type="button" class="pk" data-img="p-noci" data-alt="Pizza bianca con brie e noci"><span class="n">Brie e noci</span><span class="i">brie, noci, mozzarella</span><span class="p">8,5</span></button></li>
+      <li><button type="button" class="pk" data-img="p-stagioni" data-alt="Pizza quattro stagioni"><span class="n">Quattro stagioni</span><span class="i">olive nere, funghi, cotto, carciofini</span><span class="p">9</span></button></li>
+      <li><button type="button" class="pk" data-img="p-viennese" data-alt="Pizza viennese con wurstel"><span class="n">Viennese</span><span class="i">pomodoro, mozzarella, wurstel</span><span class="p">7</span></button></li>
+    </ul>
+  </div>
+</section>
+
+<section class="counts" aria-label="In numeri">
+  <div><b data-count="83">83</b><span data-i18n="n1">piatti in carta</span></div>
+  <div><b data-count="4.0" data-dec="1">4,0</b><span data-i18n="n2">su Tripadvisor</span></div>
+  <div><b data-count="81">81</b><span data-i18n="n3">recensioni</span></div>
+  <div><b data-count="10">10</b><span data-i18n="n4">mesi l'anno aperti</span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="locale">
+  <div class="wrap about-head">
+    <h2 class="h2" data-i18n="about_h">Una sala di legno nel centro di Caprile</h2>
+    <p class="lead" data-i18n="about_lead">Il locale è arredato in stile montano, con il soffitto in legno e le panche lungo le pareti. Si mangia pizza, primi semplici e abbondanti della cucina tradizionale, e si beve una birra alla spina con una grappa o un amaro.</p>
+  </div>
+  <div class="about-grid wrap">
+    <figure class="about-photo">
+      <img src="img/sala.jpg" alt="La sala interna con il soffitto in legno e le sedie intorno ai tavoli" width="1920" height="1920" loading="lazy">
+      <p class="note-card" data-i18n="about_note">Servizio veloce, personale gentile, prezzi contenuti. Un posto adatto a tutte le età, famiglie comprese, con parcheggio vicino.</p>
+    </figure>
+    <div class="facts">
+      <dl>
+        <div><dt data-i18n="f_where">Dove</dt><dd>Corso Veneto 64, Caprile</dd></div>
+        <div><dt data-i18n="f_rest">Riposo</dt><dd data-i18n="f_rest_v">Martedì</dd></div>
+        <div><dt data-i18n="f_closed">Chiusura annuale</dt><dd data-i18n="f_closed_v">Giugno e gennaio</dd></div>
+        <div><dt data-i18n="f_park">Parcheggio</dt><dd data-i18n="f_park_v">Gratuito, vicino</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- MENU: la scena fissa con foto che cambia -->
+<section class="menu section" id="menu">
+  <div class="wrap">
+    <h2 class="h2 menu-h" data-i18n="menu_h2">Il menù completo</h2>
+  </div>
+  <div class="menu-grid wrap">
+    <div class="menu-photo" aria-hidden="true">
+      <div class="menu-photo-frame">
+        <img class="mp on" data-cat="pizze" src="img/pizza-stagioni.jpg" alt="Pizza quattro stagioni, immagine illustrativa" width="1200" height="1600" loading="lazy">
+        <img class="mp" data-cat="primi" src="img/ravioli.jpg" alt="" width="1920" height="1920" loading="lazy">
+        <img class="mp" data-cat="piastra" src="img/polenta.jpg" alt="" width="1200" height="1600" loading="lazy">
+        <img class="mp" data-cat="dolci" src="img/dolce.jpg" alt="" width="1200" height="1600" loading="lazy">
+        <img class="mp" data-cat="bere" src="img/birra-pizza.jpg" alt="" width="1200" height="900" loading="lazy">
+      </div>
+      <p class="menu-cap" id="menuCap">Pizze</p>
+    </div>
+
+    <div class="menu-list">
+      <p class="menu-note" data-i18n="menu_note">Prezzi indicativi, da confermare con il locale. Pranzo e sera.</p>
+
+      <article class="cat" data-cat="pizze" data-cap-it="Pizze" data-cap-en="Pizzas">
+        <img class="cat-img" src="img/pizza-stagioni-l.jpg" alt="Pizza quattro stagioni, immagine illustrativa" width="1200" height="900" loading="lazy">
+        <h3 data-i18n="c_pizze">Le pizze</h3>
+        <h4 data-i18n="c_cime">Le speciali della casa</h4>
+        <ul>
+          <li><span class="n">Golosa</span><span class="i">burrata, bufala, pomodori secchi, crudo, rucola</span><span class="p">13</span></li>
+          <li><span class="n">Liguria</span><span class="i">burrata, pomodori secchi, rucola, olive nere</span><span class="p">12</span></li>
+          <li><span class="n">Pelmo</span><span class="i">funghi, prosciutto crudo, gorgonzola</span><span class="p">11</span></li>
+          <li><span class="n">Civetta</span><span class="i">funghi, gorgonzola, porchetta</span><span class="p">·</span></li>
+          <li><span class="n">Dolomiti</span><span class="i">formaggio, funghi, salsiccia</span><span class="p">10</span></li>
+          <li><span class="n">Mosquito</span><span class="i">melanzane, zucchine, pomodorini, grana</span><span class="p">10</span></li>
+          <li><span class="n">Inferno</span><span class="i">aglio, olive bianche, peperoni, salame piccante</span><span class="p">10</span></li>
+          <li><span class="n">Veneto</span><span class="i">porcini, pancetta, rosmarino</span><span class="p">10</span></li>
+          <li><span class="n">Trevigiana</span><span class="i" data-i18n="winter">solo in inverno · crudo, radicchio</span><span class="p">11</span></li>
+          <li><span class="n" data-i18n="house">Pizza della casa</span><span class="i">bresaola, brie, grana, rucola, aglio</span><span class="p">9,5</span></li>
+        </ul>
+        <h4 data-i18n="c_class">Le classiche</h4>
+        <ul>
+          <li><span class="n">Marinara</span><span class="i">pomodoro, aglio, origano</span><span class="p">4,5</span></li>
+          <li><span class="n">Margherita</span><span class="i">pomodoro, mozzarella</span><span class="p">5,5</span></li>
+          <li><span class="n">Napoli</span><span class="i">acciughe, capperi</span><span class="p">7</span></li>
+          <li><span class="n">Cotto</span><span class="i">prosciutto cotto</span><span class="p">7</span></li>
+          <li><span class="n">Salamino</span><span class="i">salame piccante</span><span class="p">7,5</span></li>
+          <li><span class="n">Capricciosa</span><span class="i">funghi, cotto, carciofini</span><span class="p">8</span></li>
+          <li><span class="n">Quattro formaggi</span><span class="i">gorgonzola, grana, mozzarella, formaggio</span><span class="p">8,5</span></li>
+          <li><span class="n">Boscaiola</span><span class="i">funghi, gorgonzola, speck</span><span class="p">9,5</span></li>
+          <li><span class="n">Valdostana</span><span class="i">speck, taleggio</span><span class="p">9</span></li>
+          <li><span class="n">Brie e noci</span><span class="i">brie, noci, mozzarella</span><span class="p">8,5</span></li>
+          <li><span class="n">Porcini</span><span class="i">funghi porcini</span><span class="p">8,5</span></li>
+          <li><span class="n">Vegetariana</span><span class="i">melanzane, zucchine</span><span class="p">8</span></li>
+          <li><span class="n">Calzone</span><span class="i">cotto, funghi</span><span class="p">8</span></li>
+          <li><span class="n">Misto mare</span><span class="i">gamberi, vongole</span><span class="p">10</span></li>
+        </ul>
+      </article>
+
+      <article class="cat" data-cat="primi" data-cap-it="Primi" data-cap-en="First courses">
+        <img class="cat-img" src="img/ravioli.jpg" alt="" width="1200" height="900" loading="lazy">
+        <h3 data-i18n="c_primi">I primi</h3>
+        <ul>
+          <li><span class="n">Casunziei di spinaci</span><span class="i">burro fuso e ricotta affumicata</span><span class="p">8</span></li>
+          <li><span class="n">Spätzle alla tirolese</span><span class="i">panna e speck</span><span class="p">8,5</span></li>
+          <li><span class="n">Gnocchi</span><span class="i">ragù, pomodoro, o burro fuso e ricotta affumicata</span><span class="p">7,5</span></li>
+          <li><span class="n">Spaghetti alla carbonara</span><span class="i">uova, pancetta, pepe nero</span><span class="p">8</span></li>
+          <li><span class="n">Penne all'arrabbiata</span><span class="i">pomodoro, peperoncino, aglio</span><span class="p">7,5</span></li>
+          <li><span class="n">Pasta al ragù o al pomodoro</span><span class="i"></span><span class="p">7,5</span></li>
+          <li><span class="n">Spaghetti aglio, olio e peperoncino</span><span class="i"></span><span class="p">7</span></li>
+          <li><span class="n" data-i18n="soup">Zuppa del giorno</span><span class="i"></span><span class="p">7</span></li>
+        </ul>
+      </article>
+
+      <article class="cat" data-cat="piastra" data-cap-it="Polenta e carni" data-cap-en="Polenta and meat">
+        <img class="cat-img" src="img/polenta.jpg" alt="" width="1200" height="900" loading="lazy">
+        <h3 data-i18n="c_piastra">Polenta, funghi e carni</h3>
+        <ul>
+          <li><span class="n">Polenta e salsiccia alla piastra</span><span class="i">con funghi trifolati</span><span class="p">11,5</span></li>
+          <li><span class="n">Formaggio alla piastra</span><span class="i">con polenta</span><span class="p">8,5</span></li>
+          <li><span class="n">Goulasch all'ungherese</span><span class="i">manzo, cipolla, paprika</span><span class="p">10</span></li>
+          <li><span class="n">Tagliata all'aceto balsamico</span><span class="i"></span><span class="p">13</span></li>
+          <li><span class="n">Entrecôte di manzo ai ferri</span><span class="i"></span><span class="p">9</span></li>
+          <li><span class="n">Scaloppina al limone</span><span class="i"></span><span class="p">8,5</span></li>
+          <li><span class="n">Wurstel alla piastra</span><span class="i">con patatine fritte</span><span class="p">7</span></li>
+          <li><span class="n" data-i18n="sides">Funghi trifolati, verdure grigliate</span><span class="i"></span><span class="p">4</span></li>
+        </ul>
+      </article>
+
+      <article class="cat" data-cat="dolci" data-cap-it="Dolci" data-cap-en="Desserts">
+        <img class="cat-img" src="img/dolce.jpg" alt="" width="1200" height="900" loading="lazy">
+        <h3 data-i18n="c_dolci">I dolci</h3>
+        <ul>
+          <li><span class="n">Tiramisù</span><span class="i"></span><span class="p">3,8</span></li>
+          <li><span class="n">Profiteroles</span><span class="i"></span><span class="p">3,3</span></li>
+          <li><span class="n">Meringata</span><span class="i"></span><span class="p">3</span></li>
+          <li><span class="n" data-i18n="tartufo">Tartufo bianco o nero</span><span class="i"></span><span class="p">3</span></li>
+          <li><span class="n" data-i18n="gelato">Gelato alla vaniglia o nocciola</span><span class="i"></span><span class="p">3</span></li>
+          <li><span class="n" data-i18n="salads">Insalata verde o mista, patatine</span><span class="i"></span><span class="p">3,5</span></li>
+        </ul>
+      </article>
+
+      <article class="cat" data-cat="bere" data-cap-it="Da bere" data-cap-en="Drinks">
+        <img class="cat-img" src="img/birra-pizza.jpg" alt="" width="1200" height="900" loading="lazy">
+        <h3 data-i18n="c_bere">Da bere</h3>
+        <ul>
+          <li><span class="n" data-i18n="beer">Birra alla spina, Moretti e Ichnusa</span><span class="i">piccola · media</span><span class="p">2,5 · 5,5</span></li>
+          <li><span class="n" data-i18n="wine">Vino della casa, rosso o bianco</span><span class="i">¼ l · ½ l · 1 l</span><span class="p">2,5 · 4,5 · 8,5</span></li>
+          <li><span class="n" data-i18n="bottles">Vini in bottiglia</span><span class="i">Lugana, Refosco, Cabernet franc, Prosecco</span><span class="p">11 – 13</span></li>
+          <li><span class="n" data-i18n="grappe">Grappe e amari di montagna</span><span class="i">mugo, genziana, mirtillo, lampone…</span><span class="p">2,5 – 3,5</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERIA: tre fotografie a tutto schermo -->
+<section class="gallery" aria-label="Il locale">
+  <p class="gallery-lead" data-i18n="gal_lead">Fuori i gerani sul balcone, dentro il legno, il banco e le tavole apparecchiate con la carta.</p>
+  <figure class="shot"><img src="img/ingresso.jpg" alt="L'ingresso del locale con i balconi fioriti" width="1200" height="900" loading="lazy"><figcaption data-i18n="cap1">Corso Veneto, al centro di Caprile</figcaption></figure>
+  <figure class="shot"><img src="img/bar.jpg" alt="Il banco e la sala con le travi di legno" width="1920" height="1920" loading="lazy"><figcaption data-i18n="cap2">Il banco, con la birra alla spina</figcaption></figure>
+  <figure class="shot"><img src="img/tavola.jpg" alt="Due pizze sulla tovaglietta di carta con una birra" width="1920" height="1920" loading="lazy"><figcaption data-i18n="cap3">Pizza e tovaglietta di carta</figcaption></figure>
+</section>
+
+<!-- RECENSIONI: la tovaglietta di carta -->
+<section class="proof" id="recensioni">
+  <div class="card">
+    <h2 class="card-h" data-i18n="rev_h">Dicono di noi</h2>
+    <p class="card-score"><span data-i18n="rev_score">4,0 su 5 · 81 recensioni su Tripadvisor</span></p>
+    <img class="tip" src="img/pizza-noci.jpg" alt="Una pizza bianca con brie e noci" width="1200" height="1600">
+    <p class="quotes">
+      <span>«<span data-i18n="q1">Atmosfera accogliente e rilassante, pizza davvero eccezionale, personale gentilissimo.</span>» Michela, <span data-i18n="d1">agosto 2026</span></span>
+      <span class="dot" aria-hidden="true">·</span>
+      <span>«<span data-i18n="q2">Una buona varietà di pizze, anche con abbinamenti originali. Buoni i prezzi.</span>» Simone, <span data-i18n="d2">settembre 2024</span></span>
+      <span class="dot" aria-hidden="true">·</span>
+      <span>«<span data-i18n="q3">Polenta con salsiccia e funghi eccellente, poi i casunziei. Tutto al giusto prezzo.</span>» Tiziana, <span data-i18n="d3">luglio 2024</span></span>
+    </p>
+    <p class="proverb" data-i18n="proverb">«La bellezza non fa bollire la pentola.»</p>
+    <p class="proverb-src" data-i18n="proverb_src">Dalla tovaglietta di carta del locale</p>
+  </div>
+</section>
+
+<!-- CONTATTO: la scheda sulla fotografia -->
+<section class="visit" id="dove">
+  <div class="visit-pic"><img src="img/ingresso.jpg" alt="Il balcone fiorito all'ingresso del locale" width="1200" height="900"></div>
+  <div class="visit-card">
+    <h2 data-i18n="visit_h">Vieni a trovarci</h2>
+    <p class="addr">Corso Veneto 64<br>32022 Caprile di Alleghe (BL)</p>
+    <dl class="hours">
+      <div><dt data-i18n="h_days">Lunedì, giovedì – domenica</dt><dd>12:00–14:00<br>17:00–21:00</dd></div>
+      <div><dt data-i18n="h_wed">Mercoledì</dt><dd>12:00–14:00<br>17:00–21:00</dd></div>
+      <div><dt data-i18n="h_tue">Martedì</dt><dd data-i18n="closed">Chiuso</dd></div>
+    </dl>
+    <p class="tel"><a href="tel:+390437721212">0437 721212</a></p>
+    <p class="open-sm" id="openNow2" aria-live="polite"></p>
+    <a class="btn btn-full" href="tel:+390437721212" data-i18n="call_table">Chiama per prenotare</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER: il retro della cartolina -->
+<footer class="foot">
+  <div class="scallops" aria-hidden="true">
+    <svg viewBox="0 0 1200 50" preserveAspectRatio="none" focusable="false"><path d="M0,50 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 a50,50 0 0 1 100,0 V50 Z"/></svg>
+  </div>
+  <div class="postcard">
+    <div class="pc-left">
+      <p class="pc-big" data-i18n="foot_big">A presto, a Caprile.</p>
+      <p data-i18n="foot_msg">Ti aspettiamo con una pizza calda e la polenta sul fuoco. Chiama e dicci a che ora arrivi.</p>
+    </div>
+    <div class="pc-right">
+      <img class="stamp" src="img/ravioli.jpg" alt="" width="88" height="117" loading="lazy">
+      <address>
+        <a href="tel:+390437721212">0437 721212</a>
+        <a href="https://www.google.com/maps/place/46.4386177,11.9937919" rel="noopener">Corso Veneto 64, Caprile</a>
+        <a href="https://www.visitdolomitibellunesi.com/it/pois/ristorante-pizzeria-da-giorgio" rel="noopener">Visit Dolomiti Bellunesi</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g2627001-d4734630-Reviews-Pizzeria_da_Giorgio-Caprile_Province_of_Biella_Piedmont.html" rel="noopener">Tripadvisor</a>
+      </address>
+    </div>
+    <p class="imprint" data-i18n="imprint">Proposta di sito di Thomas Zasso · non affiliata a Pizzeria da Giorgio · Foto: Visit Dolomiti Bellunesi e viaggiatori su Tripadvisor, solo per la demo</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
